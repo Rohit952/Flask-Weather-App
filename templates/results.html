@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/results.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"></head>
+
+<body>
+    <div class = "id1">
+        <h3>Weather in {{location}} </h3>
+        <p>{{temp}} °C</h2>
+            <p>{{weather}}</h3>
+                <p>Feels like : {{feels_like}} °C</p>
+                <p>Wind Speed : {{wind_speed}} km/h</p>
+                <p>Pressure : {{pressure}} mBar</p>
+                <p>Humidity : {{humidity}} %</p>
+    </div>
+</body>
+
+</html>
